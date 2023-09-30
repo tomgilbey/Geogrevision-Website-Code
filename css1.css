@@ -1,0 +1,36 @@
+header{
+	display:flex;
+}
+.header1{
+	float:bottom;
+}
+.right{
+	float:right;
+}
+.gridContainer {
+    		display: grid;
+			grid-template-rows: auto;
+			grid-template-columns: 160px 1fr;
+			grid-template-areas:
+				"header header "
+				"nav main "
+				"footer footer ";
+}
+header {
+	grid-area: header;
+	background-color:blue;
+}
+nav {
+		grid-area: nav;
+		background-color:green;
+
+}
+main {
+		grid-area: main;
+		background-color:purple;
+}
+footer{
+		grid-area:footer;
+		background-color:red;
+}
+

@@ -27,7 +27,7 @@ if (strlen($fname)<1){
 } elseif (strlen($cpassword)<8){
 	echo 'passwordshort';
 }else{
-	//PASSWORD ENCRYPTION - You'll want to do a little research on this to talk about it fluently in your write up
+	//PASSWORD ENCRYPTION 
 
 	$spassword = password_hash($cpassword, PASSWORD_BCRYPT, ['cost' => 12]);
 	
